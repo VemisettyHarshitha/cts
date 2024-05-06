@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<h2 align="center">Products</h2>
+		<table border="1" align="center">
+			<tr>
+				<th>Product Id</th>
+				<th>Product Name</th>
+				<th>Product Price</th>
+				<th>Product Quantity</th>
+			</tr>
+			<tr>
+				<td th:text="${product.pid}"></td>
+				<td th:text="${product.pname}"></td>
+				<td th:text="${product.price}"></td>
+				<td th:text="${product.quantity}"></td>
+			</tr>
+		</table>
+		<a href="/back">Home</a><br>
+	</body>
+</html>
