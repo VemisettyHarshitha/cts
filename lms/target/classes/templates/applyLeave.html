@@ -1,0 +1,59 @@
+<html>
+<body>
+<div align="left">
+<h2 align="center"> Leave Application </h2>
+ 
+<form th:action = "@{/submitLeave}" th:object="${leaveRequest}">
+<table align ="center">
+ 
+<tr>
+<td>Enter leave Id</td>
+<td><input type="text" name="leaveId" th:field="*{leaveId}"></td>
+</tr>
+ 
+<tr>
+<td>Enter Employee Id</td>
+<td><input type="text" name="employeeId" th:field="*{employeeId}"></td>
+</tr>
+ 
+<tr>
+<td>Enter Leave Type</td>
+<td><input type="text" name="leaveType" th:field="*{leaveType}"></td>
+</tr>
+ 
+<tr>
+<td>Enter Leave Start Date</td>
+<td><input type="text" name="fromDate" th:field="*{fromDate}"></td>
+</tr>
+ 
+<tr>
+<td>Enter leave End Date</td>
+<td><input type="text" name="toDate" th:field="*{toDate}"></td>
+</tr>
+ 
+<tr>
+<td>Enter Reason</td>
+<td><input type="text" name="reason" th:field="*{reason}"></td>
+</tr>
+ 
+<tr>
+<td>Enter Manager Id</td>
+<td><input type="text" name="managerId" th:field="*{managerId}"></td>
+</tr>
+ 
+<tr>
+<td>Enter Comments</td>
+<td><input type="text" name="comments" th:field="*{comments}"></td>
+</tr>
+ 
+<tr>
+<td>Enter Status</td>
+<td><input type="text" name="status" th:field="*{status}"></td>
+</tr>
+ 
+ <h2 align="center"><input type="submit" value ="Apply"></h2>
+</table>
+</form>
+</body>
+</html>
+ 

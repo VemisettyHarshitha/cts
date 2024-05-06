@@ -1,0 +1,33 @@
+<html>
+</head>
+<title>Products</title>
+</head>
+<body>
+<h2 align="center">Employee Leave Transaction History</h2>
+<table border="1" align="center">
+<tr>
+<th>Employee Id</th>
+<th>Leave Type</th>
+<th>From </th>
+<th>To</th>
+<th>No of Days</th>
+<th>Reason</th>
+<th>Manager Id </th>
+<th>Manager Comments</th>
+<th>Leave Status</th>
+</tr>
+<tr th:each="leaveRequest : ${leaveRequests}">
+<td th:text="${leaveRequest.employeeId}"></td>
+<td th:text="${leaveRequest.leaveType}"></td>
+<td th:text="${leaveRequest.fromDate}"></td>
+<td th:text="${leaveRequest.toDate}"></td>
+<td th:text="${leaveRequest.days}"></td>
+<td th:text="${leaveRequest.reason}"></td>
+<td th:text="${leaveRequest.managerId}"></td>
+<td th:text="${leaveRequest.comments}"></td>
+<td th:text="${leaveRequest.status}"></td>
+</tr>
+</table>
+<a href="/back">Home</a><br>
+</body>
+</html>
